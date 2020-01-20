@@ -3,6 +3,7 @@ import 'package:http/http.dart' as http;
 
 class NetworkHelper {
   String url;
+
   NetworkHelper({this.url});
 
   Future getData() async {
@@ -10,7 +11,6 @@ class NetworkHelper {
 
     if (response.statusCode == 200) {
       String data = response.body;
-
       return jsonDecode(data);
     } else {
       print('StatusCode: ${response.statusCode}');
