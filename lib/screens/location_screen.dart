@@ -32,6 +32,7 @@ class _LocationScreenState extends State<LocationScreen> {
         cityName = 'undefined';
         weatherIcon = '';
         getMassage = "Location couldn't be found.";
+        return;
       } else {
         double temp = weatherData['main']['temp'];
         temperature = temp.toInt();
