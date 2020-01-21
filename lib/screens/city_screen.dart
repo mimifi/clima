@@ -35,7 +35,32 @@ class _CityScreenState extends State<CityScreen> {
               ),
               Container(
                 padding: EdgeInsets.all(20.0),
-                child: null,
+                child: TextField(
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 22.0,
+                  ),
+                  decoration: InputDecoration(
+                    filled: true,
+                    fillColor: Colors.white,
+                    hintText: 'City Name',
+                    hintStyle: TextStyle(
+                      color: Colors.grey,
+                    ),
+                    icon: Icon(
+                      Icons.location_city,
+                      size: 30.0,
+                      color: Colors.white,
+                    ),
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(5)),
+                      borderSide: BorderSide(color: Colors.white, width: 1),
+                    ),
+                    focusedBorder: OutlineInputBorder(
+                      borderSide: BorderSide(color: Colors.white),
+                    ),
+                  ),
+                ),
               ),
               FlatButton(
                 onPressed: () {},
